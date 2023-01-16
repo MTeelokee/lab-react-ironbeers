@@ -25,7 +25,8 @@ export default function Beer() {
     <>
       {loading ? (
         beers.map((e) => (
-          <div key={e.id}>
+          <div key={e._id}>
+          
             <img src={e.image_url} width={"80px"} alt={e.name} />
             <NavLink to={`/navbar/beer/${e._id}`}>
               {" "}
